@@ -1,0 +1,140 @@
+{
+ "capture_days": {
+  "2025-03-20": 1210
+ },
+ "capture_window": {
+  "start": "2025-03-20 09:09:15",
+  "end": "2025-03-20 13:44:42",
+  "span_hours": 4.590833333333333
+ },
+ "n_source_images": 1211,
+ "n_with_timestamp": 1210,
+ "consecutive_gap_s": {
+  "median": 2.0,
+  "le_2s": 646,
+  "le_5s": 1120,
+  "n_pairs": 1209
+ },
+ "test_to_train_distance_s": {
+  "median": 3.0,
+  "le_2s": 60,
+  "le_5s": 113,
+  "le_30s": 124,
+  "n_test": 124
+ },
+ "bursts": {
+  "gap_threshold_s": 30,
+  "n_bursts": 27,
+  "n_bursts_spanning_splits": 21
+ },
+ "metrics_by_isolation": {},
+ "augmentation": {
+  "n_source_images": 964,
+  "versions_per_source": {
+   "3": 964
+  },
+  "n_sources_count_differs": 226,
+  "pct_sources_count_differs": 23.443983402489625,
+  "total_train_instances": 31672,
+  "divisible_by_3": false
+ },
+ "capture_date": "2025-03-20",
+ "sessions_desc": "09:09–09:59, 10:00–10:51, 13:17–13:44",
+ "session_counts": {
+  "09h (40-day plot)": 363,
+  "10h (60-day plot)": 627,
+  "13h (mixed plot)": 220
+ },
+ "frame_overlap": {
+  "adjacent_max_s": 5,
+  "far_min_s": 600,
+  "n_adjacent": 60,
+  "n_far": 60,
+  "adjacent_median": 0.005666666666666667,
+  "far_median": 0.005333333333333333,
+  "adjacent_gt_005": 4,
+  "far_gt_005": 0,
+  "adjacent_gt_015": 0,
+  "far_gt_015": 0
+ },
+ "sessions": {
+  "09h (40-day plot)": {
+   "n_train": 335,
+   "n_valid": 0,
+   "n_test": 28,
+   "n_test_images": 28,
+   "models": {
+    "faster_rcnn": {
+     "precision": 0.5078543191872348,
+     "recall": 0.3652173913043478,
+     "f1": 0.4247264054206468,
+     "n_runs": 5
+    },
+    "retinanet": {
+     "precision": 0.47119164249182766,
+     "recall": 0.39829192546583847,
+     "f1": 0.43163665641926513,
+     "n_runs": 4
+    },
+    "yolov10": {
+     "precision": 0.629026137880311,
+     "recall": 0.3565217391304348,
+     "f1": 0.4546832687059753,
+     "n_runs": 5
+    }
+   }
+  },
+  "10h (60-day plot)": {
+   "n_train": 462,
+   "n_valid": 87,
+   "n_test": 78,
+   "n_test_images": 78,
+   "models": {
+    "faster_rcnn": {
+     "precision": 0.5060794951978977,
+     "recall": 0.5979797979797981,
+     "f1": 0.5481793096175308,
+     "n_runs": 5
+    },
+    "retinanet": {
+     "precision": 0.44558245668134616,
+     "recall": 0.6123737373737373,
+     "f1": 0.5158158190853023,
+     "n_runs": 4
+    },
+    "yolov10": {
+     "precision": 0.5936904016513191,
+     "recall": 0.451010101010101,
+     "f1": 0.5123769615903175,
+     "n_runs": 5
+    }
+   }
+  },
+  "13h (mixed plot)": {
+   "n_train": 166,
+   "n_valid": 36,
+   "n_test": 18,
+   "n_test_images": 18,
+   "models": {
+    "faster_rcnn": {
+     "precision": 0.45972429774165996,
+     "recall": 0.42386363636363633,
+     "f1": 0.4409008129617774,
+     "n_runs": 5
+    },
+    "retinanet": {
+     "precision": 0.3671859006216101,
+     "recall": 0.4375,
+     "f1": 0.3987741031438108,
+     "n_runs": 4
+    },
+    "yolov10": {
+     "precision": 0.5173013986844485,
+     "recall": 0.3022727272727273,
+     "f1": 0.38137021584559216,
+     "n_runs": 5
+    }
+   }
+  }
+ }
+}
